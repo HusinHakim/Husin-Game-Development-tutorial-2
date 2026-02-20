@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://nu8kdoolgmuf"]
+
+[ext_resource type="PackedScene" uid="uid://ddx0mhnt1ailu" path="res://scenes/ObjectiveAreaLvl2.tscn" id="2_eqxsl"]
+[ext_resource type="PackedScene" uid="uid://2l8dbfsh07v1" path="res://scenes/GreenShip.tscn" id="2_pbc48"]
+[ext_resource type="PackedScene" uid="uid://ct0jns3j6qqo6" path="res://scenes/SnowPlatform.tscn" id="3_b4j7a"]
+[ext_resource type="Script" uid="uid://bps2ad3ijau63" path="res://scenes/PlatformGreen.gd" id="3_eqxsl"]
+
+[node name="Level2" type="Node" unique_id=1304082317]
+
+[node name="GreenShip" parent="." unique_id=1510047965 instance=ExtResource("2_pbc48")]
+position = Vector2(997, 368)
+mass = 1000.0
+
+[node name="ObjectiveArea" parent="." unique_id=936399622 instance=ExtResource("2_eqxsl")]
+position = Vector2(930, 1)
+
+[node name="Node2D" type="Node2D" parent="." unique_id=95209399]
+script = ExtResource("3_eqxsl")
+
+[node name="SnowPlatform2" parent="Node2D" unique_id=126609877 instance=ExtResource("3_b4j7a")]
+position = Vector2(959, 497)
+
+[node name="SnowPlatform" parent="Node2D" unique_id=680699547 instance=ExtResource("3_b4j7a")]
+position = Vector2(1031, 496)
