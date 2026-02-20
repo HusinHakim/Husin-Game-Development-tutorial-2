@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ct0jns3j6qqo6"]
+
+[ext_resource type="Texture2D" uid="uid://cbwgix0inp3tk" path="res://assets/snow.png" id="1_34c4k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_064qm"]
+size = Vector2(70, 70)
+
+[node name="SnowPlatform" type="StaticBody2D" unique_id=126609877]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1500435328]
+texture = ExtResource("1_34c4k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=536032323]
+shape = SubResource("RectangleShape2D_064qm")

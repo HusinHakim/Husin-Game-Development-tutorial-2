@@ -15,9 +15,11 @@ position = Vector2(35, 565)
 script = ExtResource("3")
 
 [node name="StonePlatform" parent="PlatformBlue" unique_id=964098601 instance=ExtResource("1")]
+script = ExtResource("3")
 
 [node name="StonePlatform2" parent="PlatformBlue" unique_id=1594265889 instance=ExtResource("1")]
 position = Vector2(70, 0)
+script = ExtResource("3")
 
 [node name="BlueShip" parent="." unique_id=150247224 instance=ExtResource("2")]
 position = Vector2(72.7009, 421.901)
